@@ -1,5 +1,9 @@
 # Simple set up for a JavaScript dev environment
 
+From [this excellent article](https://dev.to/corgibytes/setting-up-a-minimal-yet-useful-javascript-dev-environment) by [Kamil Ogórek](https://twitter.com/kamilogorek). For more detail and the reasoning behind using the tools read the article.
+
+
+
 This will set up a dev environment for a JavaScript project in less than 5 minutes, includes linting with [Standard](https://github.com/feross/standard), and testing suite [Ava](https://github.com/avajs/ava).
 It also uses [Chokidar-cli](https://github.com/kimmobrunfeldt/chokidar-cli) for file watching and [Precommit-hook](https://github.com/nlf/precommit-hook) for running npm scripts automatically.
 
