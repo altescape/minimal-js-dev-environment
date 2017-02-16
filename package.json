@@ -4,9 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "ava",
+    "lint": "standard",
+    "dev": "chokidar '**/*.js' -c 'standard && ava'"
   },
   "keywords": [],
   "author": "Michael Watts <hello@michaelwatts.me> (http://michaelwatts.me)",
-  "license": "ISC"
+  "license": "ISC",
+  "pre-commit": [ "test", "lint" ],
+  "devDependencies": {
+    "ava": "^0.18.1",
+    "chokidar-cli": "^1.2.0",
+    "precommit-hook": "^3.0.0",
+    "standard": "^8.6.0"
+  }
 }
